@@ -1,0 +1,1 @@
+json.array! @cashmeouts, partial: 'cashmeouts/cashmeout', as: :cashmeout

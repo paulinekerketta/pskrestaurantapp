@@ -1,0 +1,1 @@
+json.array! @driverslists, partial: 'driverslists/driverslist', as: :driverslist

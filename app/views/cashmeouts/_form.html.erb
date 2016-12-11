@@ -1,0 +1,57 @@
+<%= form_for(cashmeout) do |f| %>
+  <% if cashmeout.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cashmeout.errors.count, "error") %> prohibited this cashmeout from being saved:</h2>
+
+      <ul>
+      <% cashmeout.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %>
+    <%= f.date_select :date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :drop %>
+    <%= f.number_field :drop %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sub_total %>
+    <%= f.text_field :sub_total %>
+  </div>
+
+  <div class="field">
+    <%= f.label :total_delivery %>
+    <%= f.number_field :total_delivery %>
+  </div>
+
+  <div class="field">
+    <%= f.label :del_charge %>
+    <%= f.text_field :del_charge %>
+  </div>
+
+  <div class="field">
+    <%= f.label :extra %>
+    <%= f.text_field :extra %>
+  </div>
+
+  <div class="field">
+    <%= f.label :toget %>
+    <%= f.text_field :toget %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

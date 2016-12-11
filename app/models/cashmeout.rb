@@ -1,0 +1,2 @@
+class Cashmeout < ApplicationRecord
+end

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2016-12-11
+  name: MyString
+  drop: 1
+  sub_total: 9.99
+  total_delivery: 1
+  del_charge: 9.99
+  extra: 9.99
+  toget: 9.99
+
+two:
+  date: 2016-12-11
+  name: MyString
+  drop: 1
+  sub_total: 9.99
+  total_delivery: 1
+  del_charge: 9.99
+  extra: 9.99
+  toget: 9.99

@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @cashmeout.date %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @cashmeout.name %>
+</p>
+
+<p>
+  <strong>Drop:</strong>
+  <%= @cashmeout.drop %>
+</p>
+
+<p>
+  <strong>Sub total:</strong>
+  <%= @cashmeout.sub_total %>
+</p>
+
+<p>
+  <strong>Total delivery:</strong>
+  <%= @cashmeout.total_delivery %>
+</p>
+
+<p>
+  <strong>Del charge:</strong>
+  <%= @cashmeout.del_charge %>
+</p>
+
+<p>
+  <strong>Extra:</strong>
+  <%= @cashmeout.extra %>
+</p>
+
+<p>
+  <strong>Toget:</strong>
+  <%= @cashmeout.toget %>
+</p>
+
+<%= link_to 'Edit', edit_cashmeout_path(@cashmeout) %> |
+<%= link_to 'Back', cashmeouts_path %>
