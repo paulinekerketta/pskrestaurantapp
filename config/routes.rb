@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
- # get 'page/home'
+  get 'page/home'
 
   get 'page/contact'
 
@@ -14,6 +14,6 @@ Rails.application.routes.draw do
   resources :cashmeouts
   resources :driverslists
 
-  root to 'page#home'
+  root 'cashmeouts#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
